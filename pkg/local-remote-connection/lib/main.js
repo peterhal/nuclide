@@ -8,11 +8,11 @@
  * @flow
  */
 
-import type ServerConnection from './ServerConnection';
+import type {ServerConnection} from './ServerConnection';
 import type {NuclideUri} from '../../commons-node/nuclideUri';
 import nuclideUri from '../../commons-node/nuclideUri';
 
-export {ConnectionCache} from './ConnectionCache';
+export {ConnectionCache} from '../../nuclide-remote-connection/lib/ConnectionCache';
 export {ServerConnection} from './ServerConnection';
 
 export function getServiceByConnection(service: string, connection: ?ServerConnection): any {
