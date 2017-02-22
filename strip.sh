@@ -121,6 +121,7 @@ rm -rf spec
 
 # Files which should be moved to other packages.
 rm pkg/commons-atom/arcanist.js
+rm pkg/commons-atom/remote-text-buffer.js
 rm pkg/commons-atom/streamProcessToConsoleMessages.js
 rm pkg/commons-atom/vcs.js
 rm pkg/nuclide-ui/ChangedFilesList.js
