@@ -19,7 +19,7 @@ import type {
 } from '../types';
 import type {ActionsObservable} from '../../../commons-node/redux-observable';
 
-import {save} from '../../../commons-atom/text-buffer';
+import {save} from '../../../commons-atom/remote-text-buffer';
 import {observableFromTask} from '../../../commons-node/tasks';
 import UniversalDisposable from '../../../commons-node/UniversalDisposable';
 import {getLogger} from '../../../nuclide-logging';

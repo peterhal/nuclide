@@ -15,7 +15,7 @@ import type {
 import type {NuclideUri} from '../../commons-node/nuclideUri';
 import type {OpenConnectionDialogOptions} from './open-connection';
 
-import {loadBufferForUri, bufferForUri} from '../../commons-atom/text-buffer';
+import {loadBufferForUri, bufferForUri} from '../../commons-atom/remote-text-buffer';
 import {getLogger} from '../../nuclide-logging';
 import {getOpenFileEditorForRemoteProject} from './utils';
 import featureConfig from '../../commons-atom/featureConfig';
