@@ -141,3 +141,7 @@ git checkout pkg/nuclide-find-references/lib/rpc-types.js
 # Bits of the remoting Framework that are pulled in
 git checkout pkg/nuclide-remote-connection/lib/ConnectionCache.js
 git checkout pkg/nuclide-remote-connection/package.json
+
+# Move the remoting shim over
+cp pkg/local-remote-connection/lib/* pkg/nuclide-remote-connection/lib
+rm -rf pkg/local-remote-connection
