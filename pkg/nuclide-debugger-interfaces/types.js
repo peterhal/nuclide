@@ -8,14 +8,15 @@
  * @flow
  */
 
-import type {
-  DebuggerLaunchAttachProvider,
-} from '../nuclide-debugger-base';
 import type {NuclideUri} from '../commons-node/nuclideUri';
 import type {NuclideEvaluationExpression} from './rpc-types';
-export type {NuclideEvaluationExpressionProvider} from './types';
 
-export type NuclideDebuggerProvider = {
+export type NuclideEvaluationExpressionProvider = {
   name: string,
-  getLaunchAttachProvider(connection: NuclideUri): ?DebuggerLaunchAttachProvider,
+  // A comma-separated list of Atom grammars understood by the provider, e.g. 'source.js.jsx'
+  selector: string,
+  getEvaluationExpression(
+    editor: atom$TextEditor,
+    position: atom$Point,
+  ): Promise<?NuclideEvaluationExpression>,
 };

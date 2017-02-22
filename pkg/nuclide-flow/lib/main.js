@@ -8,7 +8,7 @@
  * @flow
  */
 
-import type {NuclideEvaluationExpressionProvider} from '../../nuclide-debugger-interfaces/service';
+import type {NuclideEvaluationExpressionProvider} from '../../nuclide-debugger-interfaces/types';
 import typeof * as FlowService from '../../nuclide-flow-rpc';
 import type {ServerConnection} from '../../nuclide-remote-connection';
 import type {
