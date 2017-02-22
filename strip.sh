@@ -150,3 +150,4 @@ rm -rf pkg/local-remote-connection
 # Suppress the errors about importing fb only files
 sed -i.tmp -e 's/^; \(suppress_comment=.*FlowFB.*\)$/\1/' .flowconfig
 ./node_modules/.bin/flow check --show-all-errors
+mv .flowconfig.tmp .flowconfig
