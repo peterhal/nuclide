@@ -146,3 +146,7 @@ git checkout pkg/nuclide-remote-connection/package.json
 # Move the remoting shim over
 cp pkg/local-remote-connection/lib/* pkg/nuclide-remote-connection/lib
 rm -rf pkg/local-remote-connection
+
+# Suppress the errors about importing fb only files
+sed -i.tmp -e 's/^; \(suppress_comment=.*FlowFB.*\)$/\1/' .flowconfig
+./node_modules/.bin/flow check --show-all-errors
