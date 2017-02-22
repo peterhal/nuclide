@@ -99,7 +99,6 @@ rm -rf pkg/nuclide-unicode-datatip
 rm -rf pkg/nuclide-url-hyperclick
 rm -rf pkg/nuclide-vcs-log
 rm -rf pkg/nuclide-version
-rm -rf pkg/nuclide-vscode-language-service
 rm -rf pkg/nuclide-watchman-helpers
 rm -rf pkg/nuclide-working-sets
 rm -rf pkg/nuclide-working-sets-common
